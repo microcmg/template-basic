@@ -1,0 +1,6 @@
+# Ignore sass cache files
+includes/autoloader.php
+includes/config.php
+includes/footer.php
+includes/globals.php
+includes/header.php
