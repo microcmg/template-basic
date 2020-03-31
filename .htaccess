@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# pass all the non uploads to application
+RewriteCond %{REQUEST_URI} !^/(basic/uploads)
+RewriteCond %{REQUEST_URI} !^/(basic/web/resources|basic/web/assets)
+RewriteRule !(web) /basic/web%{REQUEST_URI} [L]
+
+# handle application requests
+RewriteCond %{REQUEST_URI} ^/basic/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\?*$ /basic/web/index.php/$1 [L,QSA]

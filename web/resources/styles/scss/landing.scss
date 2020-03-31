@@ -1,0 +1,136 @@
+// ---------------------------------------//
+// Core Division - Required
+// ---------------------------------------//
+
+@import "breeze/core/variables";
+
+@import "partials/core/fonts";
+@import "partials/core/variables";
+
+@import "breeze/core/variables-ext";
+
+@import "breeze/core/mixins";
+
+@import "breeze/core/transitions";
+@import "breeze/core/transformations";
+@import "breeze/core/animations";
+
+@import "breeze/core/reset";
+@import "breeze/core/basic";
+
+@import "breeze/core/coloring";
+@import "breeze/core/spacing";
+
+@import "breeze/core/typography";
+
+@import "breeze/core/containers";
+
+@import "breeze/core/shapes";
+
+// ---------------------------------------//
+// Effects Division - Optional
+// Custom effects including animations, transtitions and transformations
+// ---------------------------------------//
+
+@import "breeze/effects/filters";
+
+@import "breeze/effects/hover/color";
+@import "breeze/effects/hover/transform";
+@import "breeze/effects/hover/animate";
+
+@import "breeze/effects/animations/basic";
+
+// ---------------------------------------//
+// Elements Division - Optional
+// Custom elements need cmt-iconlib
+// ---------------------------------------//
+
+@import "breeze/elements/basic";
+
+@import "breeze/elements/icon-picker";
+@import "breeze/elements/time-picker";
+@import "breeze/elements/list";
+@import "breeze/elements/select";
+@import "breeze/elements/choice";
+@import "breeze/elements/rating";
+@import "breeze/elements/switch";
+@import "breeze/elements/button";
+
+@import "breeze/elements/form";
+@import "breeze/elements/table";
+
+@import "breeze/elements/splitter";
+@import "breeze/elements/tabs";
+@import "breeze/elements/accordian";
+@import "breeze/elements/actions";
+@import "breeze/elements/breadcrumb";
+@import "breeze/elements/auto-fill";
+@import "breeze/elements/uploader";
+@import "breeze/elements/flipper";
+@import "breeze/elements/mapper";
+
+// ---------------------------------------//
+// Widgets Division - Optional
+// Re-usable widgets
+// ---------------------------------------//
+
+@import "breeze/widgets/circled";
+@import "breeze/widgets/clock";
+@import "breeze/widgets/counter";
+@import "breeze/widgets/countdown";
+
+// ---------------------------------------//
+// Components Division - Optional
+// Re-usable components having barebone structure and default implementations.
+// ---------------------------------------//
+
+@import "breeze/components/data/basic";
+@import "breeze/components/data/crud";
+@import "breeze/components/data/zigzag";
+
+@import "breeze/components/menus/basic";
+@import "breeze/components/menus/collapsible";
+@import "breeze/components/menus/social";
+
+@import "breeze/components/headers/basic";
+
+@import "breeze/components/footers/basic";
+
+@import "breeze/components/sidebars/basic";
+
+@import "breeze/components/popups/basic";
+@import "breeze/components/popups/popouts";
+
+@import "breeze/components/sliders/basic";
+@import "breeze/components/sliders/collage";
+
+@import "breeze/components/galleries/basic";
+
+@import "breeze/components/cards/basic";
+@import "breeze/components/cards/panel";
+@import "breeze/components/cards/comment";
+
+@import "breeze/components/boxes/basic";
+@import "breeze/components/boxes/panel";
+@import "breeze/components/boxes/login";
+@import "breeze/components/boxes/form";
+@import "breeze/components/boxes/file";
+@import "breeze/components/boxes/comment";
+
+@import "breeze/components/widgets/basic";
+@import "breeze/components/widgets/cart";
+
+@import "breeze/components/blocks/basic";
+
+@import "breeze/components/grid/pagination";
+@import "breeze/components/grid/sorting";
+@import "breeze/components/grid/filters";
+@import "breeze/components/grid/data";
+@import "breeze/components/grid/table";
+
+@import "breeze/components/pages/basic";
+
+// ---------------------------------------//
+// Extensions Division - Optional
+// 3rd party UI libraries and frameworks - import only if required by project.
+// ---------------------------------------//

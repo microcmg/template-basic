@@ -1,0 +1,37 @@
+# Ignore sass cache files
+.sass-cache/
+web/.sass-cache/
+web/resources/.sass-cache/
+web/resources/styles/.sass-cache/
+web/resources/styles/scss/.sass-cache/
+
+# Keep resources
+!web/resources/scripts/vendor/
+!web/resources/styles/vendor/
+
+# phpstorm project files
+.idea/
+
+# netbeans project files
+nbproject/
+
+# eclipse/aptana project files
+.buildpath
+.project
+.settings
+
+# composer files
+composer.phar
+composer.lock
+vendor/
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
