@@ -25,7 +25,8 @@ $resourcesPath	= "$basePath/resources";
 $assetsUrl		= "https://dev.vcdevhub.com/microsites/basic/web/assets";
 $assetsPath		= "$basePath/assets";
 
-// Templates Path - Used to refer the templates
+// Layouts & Templates
+$layoutsPath	= "$includesPath/layouts";
 $templatesPath	= "$includesPath/templates";
 
 // Site

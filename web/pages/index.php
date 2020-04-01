@@ -18,27 +18,19 @@ $metas = [
 // Sidebar
 $sidebar = [ 'parent' => 'home', 'child' => null, 'subChild' => null ];
 ?>
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-		<?php include "$includesPath/headers/main.php"; ?>
-		<?php include "$includesPath/styles/common.php"; ?>
-		<?php include "$includesPath/styles/landing.php"; ?>
-    </head>
-	<body>
-		<?php include "$includesPath/headers/landing.php"; ?>
-		<div class="landing-page-container">
-			<div class="container container-main">
-				<div class="content-wrap content-main-wrap">
-					<div class="content">
-						Hello Basic
-					</div>
-				</div>
-			</div>
+<?php ob_start(); ?>
+
+<div class="container container-main container-landing">
+	<div class="content-wrap content-main-wrap">
+		<div class="content padding padding-medium">
+			<h1 class="align align-center">Hello Basic</h1>
 		</div>
-        <?php include "$includesPath/footers/landing.php"; ?>
-        <?php include "$includesPath/footers/main.php"; ?>
-        <?php include "$includesPath/scripts/common.php"; ?>
-        <?php include "$includesPath/scripts/landing.php"; ?>
-    </body>
-</html>
+	</div>
+</div>
+
+<?php
+$pageContent = ob_get_contents();
+
+ob_end_clean();
+
+include "$layoutsPath/landing.php";
