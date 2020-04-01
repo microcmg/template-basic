@@ -1,3 +1,3 @@
 <?php
 include "$includesPath/footer.php";
-include "$includesPath/footer/main/marketing.php";
+include "$includesPath/footers/main/marketing.php";
