@@ -3,6 +3,9 @@
 $hostname	= $_SERVER[ 'HTTP_HOST' ];
 $protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
 
+// Site Url
+$siteUrl = "www.basic.com";
+
 // Base Url
 $baseUrl = "{$protocol}://{$hostname}/microsites/basic/web";
 

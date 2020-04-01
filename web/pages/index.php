@@ -3,13 +3,14 @@
 $title		= "Home | Basic";
 $desc		= "The home page.";
 $keywords	= "Home";
-$canonical	= "$baseUrl/";
+$canonical	= $baseUrl;
+$ogUrl		= $baseUrl;
 
 // Page Metas
 $metas = [
 	'title' => $title, 'desc' => $desc, 'keywords' => $keywords, 'robots' => $robots,
-	'ogTitle' => $title, 'ogSite' => 'www.microcmg.com',
-	'ogUrl' => 'https://www.microcmg.com', 'ogDesc' => $desc, 'ogLocale' => 'en_US',
+	'ogTitle' => $title, 'ogSite' => $siteUrl, 'ogUrl' => $ogUrl,
+	'ogDesc' => $desc, 'ogLocale' => 'en_US',
 	'ogType' => 'website', 'ogImage' => "$resourcesUrl/images/social-banner.jpg",
 	'ogImageWidth' => 320, 'ogImageHeight' => 180, 'ogImageType' => '2',
 	'twCardType' => 'summary_large_image', 'canonical' => $canonical

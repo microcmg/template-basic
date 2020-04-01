@@ -3,13 +3,16 @@
 $title		= "Page Not Found | Basic";
 $desc		= "Page not found.";
 $keywords	= null;
-$canonical	= "$baseUrl/";
+$canonical	= $baseUrl;
+$ogUrl		= $baseUrl;
 
 // Page Metas
 $metas = [
 	'title' => $title, 'desc' => $desc, 'keywords' => $keywords, 'robots' => $robots,
-	'ogTitle' => null, 'ogSite' => null, 'ogUrl' => null, 'ogDesc' => null, 'ogLocale' => 'en_US',
-	'ogType' => 'website', 'ogImage' => null, 'ogImageWidth' => 320, 'ogImageHeight' => 180, 'ogImageType' => '2',
+	'ogTitle' => null, 'ogSite' => $siteUrl, 'ogUrl' => null,
+	'ogDesc' => null, 'ogLocale' => 'en_US',
+	'ogType' => 'website', 'ogImage' => null,
+	'ogImageWidth' => 320, 'ogImageHeight' => 180, 'ogImageType' => '2',
 	'twCardType' => 'summary_large_image', 'canonical' => $canonical
 ];
 

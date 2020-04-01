@@ -6,6 +6,9 @@ $protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
 // Base Route
 $baseRoute = '/basic';
 
+// Site Url
+$siteUrl = "www.basic.com";
+
 // Base Url
 $baseUrl = "{$protocol}://{$hostname}/basic";
 
