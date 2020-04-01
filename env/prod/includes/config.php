@@ -3,8 +3,9 @@
 $hostname	= $_SERVER[ 'HTTP_HOST' ];
 $protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
 
-// Site Url
+// Site & Page Url
 $siteUrl = "www.basic.com";
+$pageUrl = "https://www.basic.com";
 
 // Base Url
 $baseUrl = "{$protocol}://{$hostname}";
