@@ -18,13 +18,7 @@ $sidebar = [ 'parent' => 'home', 'child' => null, 'subChild' => null ];
 ?>
 <?php ob_start(); ?>
 
-<div class="container container-main container-public">
-	<div class="content-wrap content-main-wrap">
-		<div class="content padding padding-medium">
-			<h1 class="align align-center">Page Not Found</h1>
-		</div>
-	</div>
-</div>
+<h1 class="padding padding-medium align align-center">Page Not Found</h1>
 
 <?php
 $pageContent = ob_get_contents();

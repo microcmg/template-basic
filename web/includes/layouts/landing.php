@@ -7,7 +7,13 @@
     </head>
 	<body>
 		<?php include "$includesPath/headers/landing.php"; ?>
-		<?= $pageContent ?>
+		<div class="container container-main container-landing">
+			<div class="content-wrap content-main-wrap">
+				<div class="content">
+					<?= $pageContent ?>
+				</div>
+			</div>
+		</div>
         <?php include "$includesPath/footers/landing.php"; ?>
         <?php include "$includesPath/footers/main.php"; ?>
         <?php include "$includesPath/scripts/common.php"; ?>
