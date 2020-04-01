@@ -4,12 +4,12 @@ $title		= "Home | Basic";
 $desc		= "The home page.";
 $keywords	= "Home";
 $canonical	= $baseUrl;
-$ogUrl		= $baseUrl;
+$pageUrl	= $baseUrl;
 
 // Page Metas
 $metas = [
 	'title' => $title, 'desc' => $desc, 'keywords' => $keywords, 'robots' => $robots,
-	'ogTitle' => $title, 'ogSite' => $siteUrl, 'ogUrl' => $ogUrl,
+	'ogTitle' => $title, 'ogSite' => $siteUrl, 'ogUrl' => $pageUrl,
 	'ogDesc' => $desc, 'ogLocale' => 'en_US',
 	'ogType' => 'website', 'ogImage' => "$resourcesUrl/images/social-banner.jpg",
 	'ogImageWidth' => 320, 'ogImageHeight' => 180, 'ogImageType' => '2',

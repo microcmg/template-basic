@@ -4,7 +4,7 @@ $title		= "Page Not Found | Basic";
 $desc		= "Page not found.";
 $keywords	= null;
 $canonical	= $baseUrl;
-$ogUrl		= $baseUrl;
+$pageUrl	= $baseUrl;
 
 // Page Metas
 $metas = [
