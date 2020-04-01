@@ -3,15 +3,15 @@
 $hostname	= $_SERVER[ 'HTTP_HOST' ];
 $protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
 
-// Base Route
-$baseRoute = '/basic';
-
 // Site & Page Url
 $siteUrl = "www.basic.com";
 $pageUrl = "https://www.basic.com";
 
 // Base Url
 $baseUrl = "{$protocol}://{$hostname}/basic";
+
+// Base Route
+$baseRoute = '/basic';
 
 // Base Path - Used to refer local files
 $basePath		= dirname( __DIR__ );
