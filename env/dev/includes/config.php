@@ -19,7 +19,8 @@ $resourcesPath	= "$basePath/resources";
 $assetsUrl		= "{$baseUrl}/web/assets";
 $assetsPath		= "$basePath/assets";
 
-// Templates Path - Used to refer the templates
+// Layouts & Templates
+$layoutsPath	= "$includesPath/layouts";
 $templatesPath	= "$includesPath/templates";
 
 // Site

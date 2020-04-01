@@ -25,7 +25,8 @@ $resourcesPath	= "$basePath/resources";
 $assetsUrl		= "https://www.basic.com/assets";
 $assetsPath		= "$basePath/assets";
 
-// Templates Path - Used to refer the templates
+// Layouts & Templates
+$layoutsPath	= "$includesPath/layouts";
 $templatesPath	= "$includesPath/templates";
 
 // Site
