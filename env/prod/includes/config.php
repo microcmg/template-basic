@@ -1,44 +1,37 @@
 <?php
-// Host and scheme
-$hostname	= $_SERVER[ 'HTTP_HOST' ];
-$protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
-
 // Site & Page Url
-$siteUrl = "www.basic.com";
-$pageUrl = "https://www.basic.com";
+$app->siteUrl = 'www.basic.com';
+$app->pageUrl = 'https://www.basic.com';
 
 // Base Url
-$baseUrl = "{$protocol}://{$hostname}";
+$app->baseUrl = "{$app->protocol}://{$app->hostname}";
 
 // Base Route
-$baseRoute = '';
+$app->baseRoute = '';
 
 // Base Url - Localhost
 if( in_array( @$_SERVER[ 'REMOTE_ADDR' ], [ '127.0.0.1', '::1' ] ) ) {
 
-	$baseUrl	= "{$protocol}://{$hostname}/basic";
-	$baseRoute	= '/basic';
+	$app->baseUrl	= "{$app->protocol}://{$app->hostname}/basic";
+	$app->baseRoute	= '/basic';
 }
 
 // Base Path - Used to refer local files
-$basePath		= dirname( __DIR__ );
-$includesPath	= "$basePath/includes";
+$app->basePath		= dirname( __DIR__ );
+$app->includesPath	= "{$app->basePath}/includes";
 
 // Resource URL & Path - Used to refer the resources
-$resourcesUrl	= "https://www.basic.com/resources";
-$resourcesPath	= "$basePath/resources";
-$assetsUrl		= "https://www.basic.com/assets";
-$assetsPath		= "$basePath/assets";
+$app->resourcesUrl	= "https://www.basic.com/resources";
+$app->resourcesPath	= "{$app->basePath}/resources";
+$app->assetsUrl		= "https://www.basic.com/assets";
+$app->assetsPath	= "{$app->basePath}/assets";
 
 // Layouts & Templates
-$layoutsPath	= "$includesPath/layouts";
-$templatesPath	= "$includesPath/templates";
+$app->layoutsPath	= "{$app->includesPath}/layouts";
+$app->templatesPath	= "{$app->includesPath}/templates";
 
 // Site
-$siteName = 'Basic';
-
-// Assets
-$assetsVersion = '20200101';
+$app->siteName = 'Basic';
 
 // SEO
-$robots = 'index,follow';
+$app->robots = 'index,follow';

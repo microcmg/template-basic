@@ -1,39 +1,26 @@
 <?php
-use cmsgears\core\common\utilities\FileUtility;
+use cmsgears\core\common\base\Application;
 
-// Globals and Config
+// Globals
 include __DIR__ . '/includes/globals.php';
+
+// Autoloader
+include __DIR__ . '/includes/autoloader.php';
+
+// Application
+$app = new Application();
+
+// Initialise Application
+$app->init();
+
+// Config
 include __DIR__ . '/includes/config.php';
-include "$includesPath/autoloader.php";
 
-// Router
-$uri = $_SERVER[ 'REQUEST_URI' ];
+// App Config
+$app->assetsVersion = '20200101';
 
-// Clean base route
-$uri = str_replace( $baseRoute, '', $uri );
-$uri = preg_split( '/\?/', $uri );
+// Initialise Router
+$app->initRouter();
 
-// Clean slashes
-$route = trim( $uri[ 0 ], '/' );
-
-$script = empty( $route ) ? "$basePath/pages/index.php" : "$basePath/pages/{$route}.php";
-
-$script	= FileUtility::normalizePath( $script );
-
-if( file_exists( $script ) ) {
-
-	include $script;
-}
-else {
-
-	$script = "$basePath/pages/404.php";
-
-	if( file_exists( $script ) ) {
-
-		include $script;
-	}
-	else {
-
-		echo "Page not found.";
-	}
-}
+// Render the Page
+$app->renderPage();
