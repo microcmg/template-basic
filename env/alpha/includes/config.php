@@ -8,16 +8,17 @@ $siteUrl = "www.basic.com";
 $pageUrl = "https://www.basic.com";
 
 // Base Url
-$baseUrl = "{$protocol}://{$hostname}/microsites/basic/web";
+$baseUrl = "{$protocol}://{$hostname}/microsites/basic";
+
+// Base Route
+$baseRoute = '/microsites/basic';
 
 // Base Url - Localhost
 if( in_array( @$_SERVER[ 'REMOTE_ADDR' ], [ '127.0.0.1', '::1' ] ) ) {
 
-	$baseUrl = "{$protocol}://{$hostname}/basic";
+	$baseUrl	= "{$protocol}://{$hostname}/basic";
+	$baseRoute	= '/basic';
 }
-
-// Base Route
-$baseRoute = '/microsites/basic';
 
 // Base Path - Used to refer local files
 $basePath		= dirname( __DIR__ );

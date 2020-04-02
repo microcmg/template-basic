@@ -10,14 +10,15 @@ $pageUrl = "https://www.basic.com";
 // Base Url
 $baseUrl = "{$protocol}://{$hostname}";
 
+// Base Route
+$baseRoute = '';
+
 // Base Url - Localhost
 if( in_array( @$_SERVER[ 'REMOTE_ADDR' ], [ '127.0.0.1', '::1' ] ) ) {
 
-	$baseUrl = "{$protocol}://{$hostname}/basic";
+	$baseUrl	= "{$protocol}://{$hostname}/basic";
+	$baseRoute	= '/basic';
 }
-
-// Base Route
-$baseRoute = '';
 
 // Base Path - Used to refer local files
 $basePath		= dirname( __DIR__ );
