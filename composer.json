@@ -1,14 +1,10 @@
 {
 	"name" : "microcmg/basic",
 	"description": "The basic template is a minimalistic template with options to override the default configurations and add it's own with the default index page.",
-	"homepage": "https://www.microcmg.com",
+	"homepage": "http://www.cmsgears.org",
 	"type": "project",
-	"keywords": [
-		"microcmg", "basic"
-	],
-	"support": {
-		"forum": "https://www.microcmg.com"
-	},
+	"keywords": [ "microcmg", "template", "basic" ],
+	"license": "MIT",
 	"minimum-stability": "stable",
 	"repositories": [
 		{
@@ -18,11 +14,21 @@
 		{
 			"type" : "vcs",
 			"url" : "https://repo1.vcdevhub.com/microcmg/module-core.git"
+		},
+		{
+			"type" : "vcs",
+			"url" : "https://repo1.vcdevhub.com/microcmg/plugin-validation.git"
 		}
 	],
 	"require" : {
-		"php": ">=7.0.0",
+		"php": ">=7.2.0",
 		"microcmg/module-core": "dev-1.0.0-alpha",
+		"microcmg/plugin-validation": "dev-1.0.0-alpha",
+		"cmgtools/breeze" : "dev-1.0.0-alpha",
+		"cmgtools/breeze-icons" : "dev-1.0.0-alpha",
+		"cmgtools/velocity" : "dev-1.0.0-alpha",
+		"cmgtools/velocity-apps" : "dev-1.0.0-alpha",
+		"cmgtools/velocity-breeze" : "dev-1.0.0-alpha",
 		"bower-asset/conditionizr": "4.5.*",
 		"bower-asset/jquery": "2.2.*",
 		"bower-asset/jquery-ui": "1.12.*",
@@ -39,10 +45,6 @@
 		"bower-asset/intl-tel-input": "15.0.*",
 		"bower-asset/animate.css": "3.7.*",
 		"bower-asset/hover": "2.3.*",
-		"bower-asset/aos": "2.3.*",
-		"bower-asset/cmt-breeze" : "dev-1.0.0-alpha",
-		"bower-asset/cmt-breeze-icons" : "dev-1.0.0-alpha",
-		"bower-asset/cmt-velocity" : "dev-1.0.0-alpha",
-		"bower-asset/cmt-velocity-apps" : "dev-1.0.0-alpha"
+		"bower-asset/aos": "2.3.*"
 	}
 }

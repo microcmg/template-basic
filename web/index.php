@@ -1,5 +1,5 @@
 <?php
-use cmsgears\core\common\base\Application;
+use cmsgears\core\common\web\Application;
 
 // Globals
 include __DIR__ . '/includes/globals.php';
