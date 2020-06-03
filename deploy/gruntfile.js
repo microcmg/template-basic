@@ -37,9 +37,9 @@ module.exports = function( grunt ) {
 					'../vendor/bower-asset/cmt-breeze-icons/dist/css/breeze-icons-brand.min.css',
 					//'../vendor/bower-asset/cmt-breeze-icons/dist/css/breeze-icons-currency.min.css',
 					'../vendor/bower-asset/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css',
-					'../vendor/bower-asset/hover/css/hover-min.css',
-					'../vendor/bower-asset/animate.css/animate.min.css',
-					'../vendor/bower-asset/aos/dist/aos.css'
+					//'../vendor/bower-asset/hover/css/hover-min.css',
+					//'../vendor/bower-asset/animate.css/animate.min.css',
+					//'../vendor/bower-asset/aos/dist/aos.css'
 				],
         		dest: '../web/assets/styles/common-20200101-src.css'
       		}
@@ -53,15 +53,14 @@ module.exports = function( grunt ) {
 					'../vendor/bower-asset/jquery/dist/jquery.min.js',
 					'../vendor/bower-asset/jquery-ui/jquery-ui.min.js',
 					'../vendor/bower-asset/imagesloaded/imagesloaded.pkgd.min.js',
-					'../vendor/bower-asset/aos/dist/aos.js',
-					'../web/resources/scripts/vendor/smooth.js',
+					//'../vendor/bower-asset/aos/dist/aos.js',
 					'../vendor/bower-asset/cmt-velocity/dist/velocity.js',
 					'../vendor/bower-asset/cmt-velocity/src/solo/lazy.js',
 
-					'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/base.js',
+					//'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/base.js',
 					//'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/grid.js',
-					'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/autoload.js',
-					'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/controllers/site.js'
+					//'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/autoload.js',
+					//'../vendor/bower-asset/cmt-velocity-apps/src/apps/core/controllers/site.js'
 				],
         		dest: '../web/assets/scripts/common-20200101-src.js'
       		}
@@ -72,8 +71,8 @@ module.exports = function( grunt ) {
       		},
       		dist: {
         		src: [
-					'../web/resources/scripts/apps/core/base.js',
-					'../web/resources/scripts/apps/core/controllers/site.js',
+					//'../web/resources/scripts/apps/core/base.js',
+					//'../web/resources/scripts/apps/core/controllers/site.js',
 					'../web/resources/scripts/main.js',
 					'../web/resources/scripts/popups.js',
 					'../web/resources/scripts/landing.js'
@@ -87,8 +86,8 @@ module.exports = function( grunt ) {
       		},
       		dist: {
         		src: [
-					'../web/resources/scripts/apps/core/base.js',
-					'../web/resources/scripts/apps/core/controllers/site.js',
+					//'../web/resources/scripts/apps/core/base.js',
+					//'../web/resources/scripts/apps/core/controllers/site.js',
 					'../web/resources/scripts/main.js',
 					'../web/resources/scripts/popups.js',
 					'../web/resources/scripts/public.js'

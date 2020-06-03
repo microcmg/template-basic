@@ -1,33 +1,30 @@
 <?php
-// Host and scheme
-$hostname	= $_SERVER[ 'HTTP_HOST' ];
-$protocol	= isset( $_SERVER[ 'HTTPS' ] ) ? 'https' : 'http';
-
-// Base Route
-$baseRoute = '/basic';
+// Site & Page Url
+$app->siteUrl = 'www.basic.com';
+$app->pageUrl = 'https://www.basic.com';
 
 // Base Url
-$baseUrl = "{$protocol}://{$hostname}/basic";
+$app->baseUrl = "{$app->protocol}://{$app->hostname}/basic";
+
+// Base Route
+$app->baseRoute = '/basic';
 
 // Base Path - Used to refer local files
-$basePath		= dirname( __DIR__ );
-$includesPath	= "$basePath/includes";
+$app->basePath		= dirname( __DIR__ );
+$app->includesPath	= "{$app->basePath}/includes";
 
 // Resource URL & Path - Used to refer the resources
-$resourcesUrl	= "{$baseUrl}/web/resources";
-$resourcesPath	= "$basePath/resources";
-$assetsUrl		= "{$baseUrl}/web/assets";
-$assetsPath		= "$basePath/assets";
+$app->resourcesUrl	= "{$app->baseUrl}/web/resources";
+$app->resourcesPath	= "{$app->basePath}/resources";
+$app->assetsUrl		= "{$app->baseUrl}/web/assets";
+$app->assetsPath	= "{$app->basePath}/assets";
 
 // Layouts & Templates
-$layoutsPath	= "$includesPath/layouts";
-$templatesPath	= "$includesPath/templates";
+$app->layoutsPath	= "{$app->includesPath}/layouts";
+$app->templatesPath	= "{$app->includesPath}/templates";
 
 // Site
-$siteName = 'Basic Demo';
-
-// Assets
-$assetsVersion = '20200101';
+$app->siteName = 'Basic Demo';
 
 // SEO
-$robots = 'noindex, nofollow';
+$app->robots = 'noindex, nofollow';

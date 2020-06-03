@@ -1,9 +1,9 @@
 <?php if( IS_ENV_DEV ) { ?>
 
-	<script src="<?= $resourcesUrl ?>/scripts/public.js"></script>
+	<script src="<?= $app->resourcesUrl ?>/scripts/landing.js"></script>
 
 <?php } else { ?>
 
-	<script src="<?= $assetsUrl ?>/scripts/public-<?= $assetsVersion ?>.js"></script>
+	<script src="<?= $app->assetsUrl ?>/scripts/landing-<?= $app->assetsVersion ?>.js"></script>
 
 <?php } ?>

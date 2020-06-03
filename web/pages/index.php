@@ -1,16 +1,17 @@
 <?php
 // Page Variables
-$title		= "Home | Basic";
-$desc		= "The home page.";
-$keywords	= "Home";
-$canonical	= "$baseUrl/";
+$app->title		= "Home | Basic";
+$app->desc		= "The home page of basic template.";
+$app->keywords	= "Home, Basic";
+$canonical		= $app->baseUrl;
+$app->pageUrl	= $canonical;
 
 // Page Metas
-$metas = [
-	'title' => $title, 'desc' => $desc, 'keywords' => $keywords, 'robots' => $robots,
-	'ogTitle' => $title, 'ogSite' => 'www.microcmg.com',
-	'ogUrl' => 'https://www.microcmg.com', 'ogDesc' => $desc, 'ogLocale' => 'en_US',
-	'ogType' => 'website', 'ogImage' => "$resourcesUrl/images/social-banner.jpg",
+$app->metas = [
+	'title' => $app->title, 'desc' => $app->desc, 'keywords' => $app->keywords, 'robots' => $app->robots,
+	'ogTitle' => $app->title, 'ogSite' => $app->siteUrl, 'ogUrl' => $app->pageUrl,
+	'ogDesc' => $app->desc, 'ogLocale' => 'en_US',
+	'ogType' => 'website', 'ogImage' => "{$app->resourcesUrl}/images/social/site-banner.jpg",
 	'ogImageWidth' => 320, 'ogImageHeight' => 180, 'ogImageType' => '2',
 	'twCardType' => 'summary_large_image', 'canonical' => $canonical
 ];
@@ -20,17 +21,17 @@ $sidebar = [ 'parent' => 'home', 'child' => null, 'subChild' => null ];
 ?>
 <?php ob_start(); ?>
 
-<div class="container container-main container-landing">
-	<div class="content-wrap content-main-wrap">
-		<div class="content padding padding-medium">
-			<h1 class="align align-center">Hello Basic</h1>
+<section class="page page-basic">
+	<div class="page-content-wrap padding padding-large-v">
+		<div class="page-content">
+			<h3 class="align align-center padding padding-medium-v">Hello Micro CMSGears !!</h3>
 		</div>
 	</div>
-</div>
+</section>
 
 <?php
 $pageContent = ob_get_contents();
 
 ob_end_clean();
 
-include "$layoutsPath/landing.php";
+include "{$app->layoutsPath}/landing.php";
